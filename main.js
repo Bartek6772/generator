@@ -38,7 +38,7 @@ const column5 = [
     "bo dzięki temu mogą kraść",
     "bo dostają za to pieniądze",
     "bo tak się uczy w państwowej szkole",
-    "bo bez tego (tfu!) demokracja nie morze istnieć",
+    "bo bez tego (tfu!) demokracja nie może istnieć",
     "bo głupich jest więcej niż mądrych",
     "bo chcą tworzyć raj na ziemi",
     "bo chcą niszczyć cywilizację białego człowieka"
