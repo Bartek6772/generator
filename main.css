@@ -4,6 +4,7 @@ body{
     height: 100%;
     background-color: #f1f1f1;
     font-family: 'Lato', sans-serif;
+    overflow: hidden;
 }
 
 *{
@@ -13,13 +14,13 @@ body{
 .container{
     width: 50%;
     padding: 22px;
-
     margin: 0 auto;
     margin-top: 13vh;
-
     border-radius: 5px;
     box-shadow: 0px 0px 10px #000;
     overflow: hidden;
+
+    background-color: #fff;
 }
 
 #output{
@@ -27,10 +28,17 @@ body{
 }
 
 #btn{
+    background-color: green;
+}
+
+#btn2{
+    background-color: red;
+}
+
+.button{
     width: 100px;
     padding: 10px;
     text-align: center;
-    background-color: green;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
@@ -38,10 +46,10 @@ body{
     display: inline-block;
 }
 
-#btn:hover{
+.button:hover{
     box-shadow: 0px 0px 6px #000;
 }
-#btn.clicked{
+.button.clicked{
     margin-top: 15px;
 }
 
@@ -61,11 +69,52 @@ body{
     left: 0;
     bottom: 0;
     padding: 20px;
-
-    width: 100%;
-    text-align: center;
+    width: 25%;
     color: #989898;
+    z-index: 100;
 }
+
+.image-box{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -430px;
+
+    display: flex;
+    justify-content: center;
+    transition: all 2s ease-in-out;
+}
+
+.image-box .content{
+    width: 700px;
+    height: 400px;
+    background-color: #fff;
+    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+    padding: 20px;
+
+}
+
+.image-box img{
+    width: 100%;
+    height: auto;
+}
+
+.image-box.active{
+    bottom: 0;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 
 @media(max-width:792px){
     .container{
@@ -73,11 +122,14 @@ body{
         box-shadow: none;
         margin-top: 100px;
         padding: 0;
-
+        background-color: #f1f1f1;
         text-align: center;
     }
     .info{
         margin-top: 15px;
     }
     
+    .image-box{
+        display: none;
+    }
 }

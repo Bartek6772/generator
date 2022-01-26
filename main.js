@@ -56,11 +56,13 @@ const column6 = [
 const columnLength = 7;
 
 const output = document.getElementById("output");
+const btn = document.getElementById("btn");
+const imageFrame = document.getElementById("image");
 
-const btn = document.getElementById("btn")
 btn.addEventListener("click", () =>{
     generate();
     btn.classList.add("clicked");
+    imageFrame.classList.add("active");
 })
 
 const generate = () => {
